@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+  FILE *fp;
+  char c;
+  printf("THe file opening data is");
+  fp=fopen("INPUT","r");
+  while((c=getc(fp))!=EOF)
+  printf("%c",c);
+  fclose(fp);
+}
+
